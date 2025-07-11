@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #0075c0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-actions a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0075c0;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #0075c0;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* body */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+    animation: zoomOut 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* .product-item:hover {
+    animation: zoomIn 0.3s ease;
+    width: 200px;
+    height: 280px;
+} */
+
+.product-img {
+    width: 100%;
+    height: 65%;
+}
+
+.product-content {
+    padding: 4px 8px
+}
+
+.product-title {
+    font-weight: 300;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(190, 52, 52);
+    padding: 4px 0;
+}
+
+.product-star {
+    position: absolute;
+    bottom: 4px;
+    color: #ffb91c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.product-star_icon {
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+
+.product-stock {
+    font-size: 0.85rem;
+    color: #808080;
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+}
+
+/* animation */
+@keyframes zoomIn {
+    from {
+        width: 180px;
+        height: 260px;
+    }
+
+    to {
+        width: 200px;
+        height: 280px;
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        width: 200px;
+        height: 280px;
+    }
+
+    to {
+        width: 180px;
+        height: 260px;
+    }
+}

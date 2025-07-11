@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- favicon -->
+    <script src="https://kit.fontawesome.com/baf554e2d9.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div class="container-production">
+        <div class="path">
+            <a href="/homepage/index.html">Home</a>
+            <span class="slash"> / </span>
+            <a href="#">Product</a>
+        </div>
+
+        <div class="product">
+            <div class="product-display">
+                <img class="product-image" alt="">
+
+                <div class="product-sharing">
+                    <p>Share: </p>
+                    <div class="product-sharing__icon">
+                        <a href="https://www.messenger.com/"><i
+                                class="sharing-icon fa-brands fa-facebook-messenger"></i></a>
+                        <a href="https://www.facebook.com/"><i class="sharing-icon fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i
+                                class="sharing-icon fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="sharing-icon fa-brands fa-pinterest"></i><a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-detail">
+                <h2 class="product-title"></h2>
+
+                <div class="product-rating">
+                    <div class="product-rating__star">
+                        <p class="product-rating__star-overal"></p>
+                        <div class="product-rating__star-icon">
+                            <div class="product-rating__star-icon-background">
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                            </div>
+                            <div class="product-rating__star-icon-display">
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                                <i class="star-icon fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="product-rating__rates">
+                        <p class="product-rating__rate-bout"></p>
+                        <span>Ratings</span>
+                    </div>
+
+                    <a href="#" class="product-report">Report</a>
+                </div>
+
+                <div class="product-price">
+                    <h2 class="product-price__final-price"></h2>
+                    <p class="product-price__original-price"></p>
+                    <div class="product-price__discount-percent"></div>
+                </div>
+
+                <div class="product-options">
+                    <div class="product-option product-brand">
+                        <p class="product-option__label">Brand</p>
+                        <p class="product-brand__info"></p>
+                    </div>
+
+                    <div class="product-option product-category">
+                        <p class="product-option__label">Category</p>
+                        <p class="product-category__info"></p>
+                    </div>
+
+                    <div class="product-option product-shipping">
+                        <p class="product-option__label">Shipping</p>
+                        <i class="product-option__icon fa-solid fa-truck"></i>
+                        <p class="product-shipping__info"></p>
+                    </div>
+
+                    <div class="product-option product-warrantly">
+                        <p class="product-option__label">Warrantly</p>
+                        <i class="product-option__icon fa-solid fa-shield"></i>
+                        <p class="product-warantly__info"></p>
+                    </div>
+
+                    <div class="product-option product-description">
+                        <p class="product-option__label">Description</p>
+                        <p class="product-description__info"></p>
+                    </div>
+
+                    <div class="product-option product-weight">
+                        <p class="product-option__label">Weight</p>
+                        <p class="product-weight__info"></p>
+                    </div>
+
+                    <div class="product-option product-stock">
+                        <p class="product-option__label">Stock</p>
+                        <p class="product-stock__info"></p>
+                    </div>
+
+                    <div class="product-option product-quantity">
+                        <p class="product-option__label">Quantity</p>
+                        <div class="product-quantity__controls">
+                            <div class="product-quantity__control product-quantity__cut">_</div>
+                            <input class="product-quantity__number" placeholder="0" type="number"></input>
+                            <div class="product-quantity__control product-quantity__add">+</div>
+                        </div>
+                    </div>
+
+                    <div class="product-action">
+                        <button class="product-action__btn product-action__add-to-cart">
+                            <i class="product-action__icon fa-solid fa-cart-plus"></i>
+                            <span>Add to cart</span>
+                        </button>
+                        <button class="product-action__btn product-action__buy-now">
+                            <i class="product-action__icon fa-solid fa-money-bill"></i>
+                            <span>Buy now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-observation">
+        <div class="rating-label">Product Ratings</div>
+
+        <ul class="rating-list">
+        </ul>
+    </div>
+
+    <script src="/product/main.js"></script>
+</body>
+
+</html>
