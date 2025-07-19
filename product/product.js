@@ -90,7 +90,7 @@ function renderProduct(product) {
 
     //product shipping
     const shipping = $('.product-shipping__info')
-    shipping.textContent = product.shipping
+    shipping.textContent = product.shippingInformation
 
     //product warrantly
     const warrantly = $('.product-warantly__info')
