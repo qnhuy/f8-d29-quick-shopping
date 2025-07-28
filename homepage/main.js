@@ -84,6 +84,6 @@ function getAllProductsElement() {
 function handleProductOnClick(product) {
     product.onclick = () => {
         const productId = product.dataset.index
-        window.location.href = `../product/product.html?id=${productId}`;
+        window.location.href = `./product/product.html?id=${productId}`;
     }
 }
