@@ -39,7 +39,10 @@ function sendRequest(method, url) {
 
 function renderProducts(products) {
     products.forEach(product => {
-        const liItem = document.createElement('li')
+        const liItem = document.createElement('a')
+        liItem.href = `./product/product.html?id=${product.id}`
+        liItem.style.textDecoration = 'none'
+        liItem.style.color = 'rgb(0, 0, 0, 0.8)'
         liItem.className = 'product-item'
         liItem.dataset.index = product.id
 
@@ -81,9 +84,9 @@ function getAllProductsElement() {
     return allProducts
 }
 
-function handleProductOnClick(product) {
-    product.onclick = () => {
-        const productId = product.dataset.index
-        window.location.href = `./product/product.html?id=${productId}`;
-    }
-}
+// function handleProductOnClick(product) {
+//     product.onclick = () => {
+//         const productId = product.dataset.index
+//         window.location.href = `.${location.pathname}product/product.html?id=${productId}`;
+//     }
+// }
